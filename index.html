@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Gulp</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+<body>
+    <main>
+        <header class="header container">
+            <div class="flex justify-between align-center header-top">
+                <div class="flex align-center header-left">
+                    <img src="img/logo.svg" alt="" class="header-left__logo">
+                    <div class="header-left__descriptor">
+                        Обсмажування та доставка кави по всій Україні
+                    </div>
+                </div>
+                <img src="" alt="" class="header-logo">
+                <div class="flex align-center header-callback">
+                    <a href="tel:+380503700278" class="header-callback__phone">+38 (050) 370-02-78</a>
+                    <button class="button button-bordered header-callback__button ">Передзвоніть мені</button>
+                </div>
+            </div>
+            <h1 class="header-title">
+                Оптове постачання <span class="title-accent title-accent--small">та обсмажування</span>
+                <span class="title-accent">зернової кави</span> від виробника за доступною ціною
+            </h1>
+            <div class="header-description">
+                Отримайте вигідну ціну без переплати за бренд під ваш обсяг кави, з можливістю створення власного Private Label
+            </div>
+            <form action="" class="header-form">
+                <div class="form__row header-form__row">
+                    <input class="form__input" type="tel" placeholder="Номер телефону">
+                    <button type="submit" class="button   header-form__button">Отримати пропозицію</button>
+                    <div class="header-form__label">з вигодою до 32%"</div>
+                </div>
+            </form>
+        </header>
+
+        <section class="triggers">
+            <div class="container">
+                <div class="flex triggers__list">
+                    <div class="triggers__item triggers__item--one" style="background-image: url('img/trigger-one.jpg');">
+                        <img src="img/steps.svg" alt="" class="triggers__item--one-img">
+                        <div class="triggers__item--one-text">
+                            Стабільне виробництво свіжообсмаженої  кави «під ключ» на аутсорсі 
+                        </div> 
+                        <dotlottie-player 
+                            src="lottie/likes.lottie" 
+                            class="triggers__anim--one"
+                            background="transparent"
+                            speed="0.5" 
+                            loop
+                            autoplay
+                        >
+                        </dotlottie-player>
+                    </div>
+                    <div class="triggers__item triggers__item--two" style="background-image: url('img/trigger-two.svg');">
+                        <dotlottie-player 
+                        src="lottie/calendar.lottie" 
+                        class="triggers__anim--two"
+                        background="transparent"
+                        speed="0.5"  
+                        loop
+                        autoplay
+                    >
+                    </dotlottie-player>
+                        <div class="triggers__item--two-text">
+                            Зменшення витрат на списання, за рахунок постачання кави за графіком
+                        </div> 
+                    </div>
+                    <div class="triggers__item triggers__item--three" style="background-image: url('img/trigger-three.svg');">
+                        <dotlottie-player 
+                        src="lottie/diagram.lottie" 
+                        class="triggers__anim--three"
+                        background="transparent"
+                        speed="1" 
+                        loop
+                        autoplay
+                    >
+                    </dotlottie-player>
+                        <div class="triggers__item--three-text">
+                            Фіксована ціна обсмаження, яка включає фасування, пакування та доставку
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="time">
+            <div class="container">
+                <h2 class="time__title">
+                    Звільніть <span class="title-accent">біііільше</span> часу для себе та розвитку бізнесу — ми вам допоможемо:
+                </h2>
+
+                <div class="time-list">
+                    <div class="time-list__item time-list__item--one">
+                        <div class="time-list__title">
+                            Обрати унікальну лінійку кави
+                        </div>
+                        <div class="time-list__desc">
+                            від робусти до арабіки категорії спешелті та обсмажувати  її тільки коли вам знадобиться
+                        </div>
+                        <img src="img/deg-list.png" alt="" class="time-list__img time-list__img--one">
+                        <img src="img/hand.png" alt="" class="time-list__img time-list__img--two">
+                    </div>
+
+                    <div class="time-list__item time-list__item--two">
+                        <div class="time-list__title">
+                            Збільшити націнку готового продукту
+                        </div>
+                        <div class="time-list__desc">
+                            за рахунок більш низької вартості обсмаженої кави без переплати за бренд
+                        </div>
+                        <dotlottie-player 
+                        src="lottie/diagram-1.lottie" 
+                        class="time-list__anim--two"
+                        background="transparent"
+                        speed="1"  
+                        loop
+                        autoplay
+                    >
+                    </dotlottie-player>
+                        <div class="time-list__desc">
+                            *9 з 10 кав’ярень пепеплачують близько 53% за брендовану наліпку іншого бренду
+                        </div>
+                    </div>
+
+                    <div class="time-list__item time-list__item--three">
+                        <div class="time-list__title">
+                            Отримати прозору ціну
+                        </div>
+                        <div class="time-list__desc">
+                            без підвищення вартості обсмажування в процесі співпраці
+                        </div>
+                        <img src="img/price.svg" alt="" class="time-list__img time-list__img--four">
+                    </div>
+
+                    <div class="time-list__item time-list__item--four">
+                        <div class="time-list__title">
+                            Підвищити лояльність клієнтів
+                        </div>
+                        <div class="time-list__desc">
+                            завдяки унікальній фірмовій упаковці
+                        </div>
+                        <img src="img/pack-top.svg" alt="" class="time-list__img time-list__img--five">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="steps">
+            <div class="container">
+                <h2 class="steps__title">
+                    Як уникнути занепокоєнь 
+                    <dotlottie-player 
+                    src="lottie/eyes.lottie" 
+                    class="steps__anim"
+                    background="transparent"
+                    speed="0.75"
+                    loop
+                    autoplay
+                >
+                </dotlottie-player>
+                 <span class="title-accent">через якість</span> зерна,  високу ціну та стабільність постачань, <span class="steps__title--small">отримуючи завжди смачне і свіже зерно без переплати за бренд?</span>
+                </h2>
+                <div class="steps__list">
+                    <div class="steps__item">
+                        <img src="img/7steps.svg" alt="" class="steps__img">
+                        <div class="steps__desc">
+                            позбавимо вас від купи стресових процессів, що дозволять розвивати бізнес без головного болю
+                        </div>
+                        <div class="flex align-center steps__bottom">
+                            <img src="img/ava.png" alt="" class="steps__ava">
+                            <div class=" steps__info">
+                                <div class="steps__name">Вікторія</div>
+                                <div class="steps__post">Операційний директор</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps__item">
+                        <div class="steps__heading">
+                            Підбираємо асортимент і ступінь обсмаження
+                        </div>
+                        <div class="steps__desc">
+                            окремо під кожного кліента, більш ніж з 200 сортів від 3-х найкращих українських імпортерів, які напряму постачають зелене зерно з 19 країн
+                        </div>
+                        <div class="steps__num">01</div>
+                    </div>
+
+                    <div class="steps__item">
+                        <div class="steps__heading">
+                            Замовимо та перевіримокожну партію
+                        </div>
+                        <div class="steps__desc">
+                            на відповідність кольору,  вологості,  ароматичним властивостям, та іншим стандартам якості. Відсіюємо можливе сміття на спеціальному обладнанні
+                        </div>
+                        <div class="steps__num">02</div>
+                    </div>
+
+                    <div class="steps__item">
+                        <div class="steps__heading">
+                            Зберігаємо зерно на спеціальному складі
+                        </div>
+                        <div class="steps__desc">
+                            при спеціальній температурі та вологості, щоб зберегти властивості та смак кави. Беремо необхідні проби та відправлємо зерно на обсмажування за графіком
+                        </div>
+                        <div class="steps__num">03</div>
+                    </div>
+
+                    <div class="steps__item">
+                        <div class="steps__heading">
+                            Обсмажуємо свіже зерно партіями від 10 кілограмів
+                        </div>
+                        <div class="steps__desc">
+                            Узгоджуємо щомісячний обсяг, рівномірно розподілив обсмаження партій та готуємо за 7 дні до дати постачання, щоб зерно  пройшло необхідний процес дегазації
+                        </div>
+                        <div class="steps__num">04</div>
+                    </div>
+
+                    <div class="steps__item">
+                        <div class="steps__heading">
+                            Перевіряємо,мелемо та фасуємо
+                        </div>
+                        <div class="steps__desc">
+                            Збираємо проби кожної обсмаженої партії для перевірки якості та фасуємо у вакуумні пакети  з вашою фірмовою наліпкою та датою пакування, поставляємо каву в зернах або мелену за вашим бажанням.
+                        </div>
+                        <div class="steps__num">05</div>
+                    </div>
+
+                    <div class="steps__item">
+                        <div class="steps__heading">
+                            Робимо доставку зерна <span class="text-pink">безкоштовно</span> 
+                        </div>
+                        <div class="steps__desc">
+                            поштою або кур’єром за адресою кав’ярні або вашим гуртовим клієнтам. Якщо ви хочете забирати зерно самостійно, ми зробимо вам додаткову знижку.
+                        </div>
+                        <div class="steps__num">06</div>
+                    </div>
+
+                    <div class="steps__item">
+                        <div class="steps__heading">
+                            Надаємо рекомендації від нашого бариста
+                        </div>
+                        <div class="steps__desc">
+                            щодо приготування кожного замовленого сорту кави, щоб максимально розкрити його смак, враховуючи всі нюанси 
+                        </div>
+                        <div class="steps__label">+ сертифікат на навчання у нашій школі бариста</div>
+                        <div class="steps__num">07</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand">
+            <div class="container">
+                <h2 class="brand__title">
+                    Якщо у вас немає <span class="brand__title-span">фірмового</span> пакування, вам не потрібно вкладати в це свій час:
+                </h2>
+                <div class="brand__description">
+                    Ми розробимо дизайн вашого фірмового пакування, замовимо брендовані наліпки і здійснимо фасування у вашу нову брендовану упаковку, якщо це необхідно
+                </div>
+                <div class="brand__row">
+                    <div class="brand__left">
+                        <img src="img/photo.png" alt="" class="brand__photo">
+                        <img src="img/animation.svg" alt="" class="brand__animation">
+                    </div>
+                    <div class="brand__right">
+                        <div class="brand__heading">
+                            Отримуйте готову каву під власним брендом 
+                        </div>
+                        <div class="brand__text">
+                            без переплати за наліпку іншого бренду
+                        </div>
+                        <div class="brand__or">
+                            або...
+                        </div>
+                        <div class="brand__text">
+                            Отримуйте каву під брендом «EasyCoffee» з вигодою до 32% без додаткових націнок, за вартістю обсмаження 
+                        </div>
+                        <button class="button brand__button ">Отримати пропозицію</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality">
+            <div class="container">
+                <h2 class="quality__title">
+                    Фанатично контролюємо якість зерна та вдосконалюємо смак кави <span class="title-accent">вже 4 роки</span> 
+                </h2>
+                <div class="flex quality__row">
+                    <div class="quality__left">
+                        <img src="img/taranuk.png" alt="" class="quality__photo">
+                        <img src="img/sertificate.png" alt="" class="quality__sertificate">
+                    </div>
+                    <div class="quality__right">
+                        <div class="quality__quote quality__quote--pink">
+                            Наш штатний QA-експерта  з підтвердженим міжнародним сертифікатом SCA Sensory Intermidiate оцінює та контролєю якість готового продукту
+                        </div>
+                        <div class="quality__quote quality__quote--purple">
+                            Це дозволяє контролювати стабільність виробництва та вдосконалювати смак кави, щоб зробити наш сервіс ще краще.
+                        </div>
+                        <div class="flex align-center quality__bottom">
+                            <img src="img/ava-purple.png" alt="" class="quality__ava">
+                            <div class=" quality__info">
+                                <div class="quality__name">Вікторія</div>
+                                <div class="quality__post">Операційний директор</div>
+                            </div>
+                        </div>
+                        <button class="quality-callback__button ">Замовити дегустаційний набір</button>
+                    </div>
+                </div>
+        </section>
+
+        <section class="time">
+            <div class="container">
+                <h2 class="time__title">
+                    Вам <span class="title-accent">сподобаються</span> ціни на свіжообсмажене зерно та сервіс, який ви отримаєте
+                </h2>
+                <div class="time__description">
+                    Залиште заявку та отримайте:
+                </div>
+                <div class="time-list">
+                    <div class="time-list__item time-list__item--one">
+                        <div class="time-list__title">
+                            Персоналізований дегустаційний набір
+                        </div>
+                        <div class="time-list__desc">
+                            4 з 5 клієнтів замовляють у нас партію, після того, як спробують дегустаційний набір
+                        </div>
+                        <img src="img/deg-list.png" alt="" class="time-list__img--one">
+                        <img src="img/pack-pink.png" alt="" class="time-list__img--two">
+                    </div>
+
+                    <div class="time-list__item time-list__item--two">
+                        <img src="img/free.svg" alt="" class="time-list__img--three">
+                        <div class="time-list__title">
+                            Консультацію персонального менеджера 
+                        </div>
+                        <form action="" class="form">
+                            <input type="text" class="form__input" placeholder="Ім’я (необов’язково)">
+                            <input type="text" class="form__input" placeholder="Номер телефону">
+                            <button class="button   form__button">Отримати консультацію</button>
+                        </form>
+                        <div class="form__safety">Ваші данні повністю захищені</div>
+                    </div>
+
+                    <div class="time-list__item time-list__item--three">
+                        <div class="time-list__title">
+                            Оптовий каталог з прозорим ціноутворенням 
+                        </div>
+                        <img src="img/table-2.svg" alt="" class="time-list__img time-list__img--four">
+                    </div>
+
+                    <div class="time-list__item time-list__item--four">
+                        <div class="time-list__title">
+                            Персоналізовані умови співпраці
+                        </div>
+                        <img src="img/rosterm.svg" alt="" class="time-list__img--five">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__row">
+                    <h2 class="about__title">
+                        Чому >143 компаній обрали нас?
+                    </h2>
+                    <div class="about__card">
+                        <div class="about__num">
+                            <span class="about__accent">8</span> з 10 
+                        </div>
+                        клієнтів, що мали досвід співпраці з іншими брендами, обрали нас за оптимальним співвідношенням ціни, якості та сервісу
+                    </div>
+                    <div class="about__card">
+                        <div class="about__num">
+                            <span class="about__accent">2</span> з 10 
+                        </div>
+                        клієнтів відразу виришили піти легким шляхом, делегували нам складні процеси та створити власний бренд                    </div>
+                    </div>
+            </div>
+        </section>
+        <section class="price">
+            <div class="container">
+                <h2 class="price__title">
+                    У нас прозоре ціноутворення, тому ви можете розрахувати ціну на всі популярні позиції без націнки 
+                </h2>
+                <div class="price__description">
+                    Ви завжди отримуєте вартість зеленого зерна без націнки, яке можна перевірити на біржі. Ми лише додаємо вартість обсмажування та фасування за весь сервіс, який ви отримаєте
+                </div>
+                <div class="calc">
+                    <div class="calc__main">
+                        <div class="calc__option">
+                            Оберіть сорт кави:
+                        </div>
+                        <ul class="calc__list">
+                            <li class="calc__item calc__item--active">
+                                Brasil Santos
+                            </li>
+                            <li class="calc__item">
+                                Brasil Santos
+                            </li>
+                        </ul>
+                        <div class="calc__option">
+                            Місячний обсяг свіжообсмаженої кави (кг/міс.)
+                        </div>
+                        <form oninput="output.value = Math.round(range.valueAsNumber)" class="calc__range">
+                            <div class="range">
+                                <input name="range" type="range" min="20" max="100">
+                                <div class="range-output">
+                                  <output class="output" name="output" for="range">
+                                    60
+                                  </output>
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+                    <div class="calc__info">
+                        <div class="calc__price">20 160 ₴</div>
+                        <ul class="calc__triggers">
+                            <li class="calc__trigger">
+                                Ціна з урахуванням 20% НДС
+                            </li>
+                            <li class="calc__trigger">
+                                Доставка безкоштовна
+                            </li>
+                        </ul>
+                        <button class="button  ">Отримати спеціальну ціну</button>
+                        <div class="calc__more">
+                            Розрахонок з урахуванням 20% усмажування – 1.2 кг сировини = 1кг обсмаженої кави
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="economy">
+            <div class="container">
+                <h2 class="economy__title">
+                    Отримайте ще нижчу ціну в залежності від об’єму обсмаження
+                </h2>
+                <div class="economy__description">Ми надаємо п'ять рівнів цін залежно від обсягу. Чим більший обсяг, тим нижча ціна. <br> Навіть базовий рівень на 32% дешевший, ніж у конкурентів, при такій самій якості.</div>
+                <div class="economy__row">
+                    <div class="economy__compare">
+                        <div class="economy__heading">
+                            Отримуй ~32% вигоди <br> від ціни конкурентів
+                        </div>
+                        <div class="economy__desc">
+                            та отримай кращий сервіс від підбору зерна до його обсмаження і доставки
+                        </div>
+                        <img src="img/economy.svg" alt="" class="economy__compare-image">
+                        <div class="economy__subdesc">
+                            Ви отримуєте кращу ціну завдяки відсутності націнки на брендовану наліпку, при цьому якість кави не страждає
+                        </div>
+                    </div>
+                    <div class="economy__graph">
+                        <img src="img/graph.svg" alt="" class="economy__graph-image">
+                        <form action="" class="form economy__form">
+                            <div class="form__row">
+                                <input type="text" class="form__input" placeholder="Номер телефону">
+                                <button class="button   form__button">Отримати консультацію</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offer">
+            <div class="container">
+                <h2 class="offer__title">
+                    Отримайте спеціальну ціну під ваш об'єм кави та переконайтеся в чесному ціноутворенні
+                </h2>
+                <div class="offer__description">
+                    Ви завжди отримуєте вартість зеленого зерна без націнки, яке можна перевірити на біржі. Ми лише додаємо вартість обсмажування та фасування за весь сервіс, який ви отримаєте
+                </div>
+                <div class="offer-triggers">
+                    <div class="offer-triggers__heading">
+                        Разом зі спеціальною ціною, ми надішлемо:
+                    </div>
+                    <div class="offer-triggers__list">
+                        <div class="offer-triggers__item">
+                            Розрахунок собівартості на 1 кг різних сортів зеленої кави з ПДВ і без
+                        </div>
+                        <div class="offer-triggers__item">
+                            Розрахунок вартості на 1 кг різних сортів зеленої кави з ПДВ і без
+                        </div>
+                        <div class="offer-triggers__item">
+                            Розрахунок вартості обсмаженої кави з урахуванням доставки та пакування
+                        </div>
+                    </div>
+                    <form action="" class="form economy__form">
+                        <div class="form__row">
+                            <input type="text" class="form__input" placeholder="Номер телефону">
+                            <button class="button   form__button">Отримати консультацію</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="time">
+            <div class="container">
+                <h2 class="time__title">
+                    Ми <span class="title-accent">впевнені</span> у якості нашого сервісу і готові довести це дегустаційним набором
+                </h2>
+                <div class="time__description">
+                    Отримайте консультацію, а також: 
+                </div>
+                <div class="time-list">
+                    <div class="time-list__item time-list__item--one">
+                        <div class="time-list__title">
+                            Персоналізований дегустаційний набір
+                        </div>
+                        <div class="time-list__desc">
+                            4 з 5 клієнтів замовляють у нас партію, після того, як спробують дегустаційний набір
+                        </div>
+                        <img src="img/deg-list.png" alt="" class="time-list__img--one">
+                        <img src="img/pack-pink.png" alt="" class="time-list__img--two">
+                    </div>
+
+                    <div class="time-list__item time-list__item--two">
+                        <img src="img/free.svg" alt="" class="time-list__img--three">
+                        <div class="time-list__title">
+                            Консультацію персонального менеджера 
+                        </div>
+                        <form action="" class="form">
+                            <input type="text" class="form__input" placeholder="Ім’я (необов’язково)">
+                            <input type="text" class="form__input" placeholder="Номер телефону">
+                            <button class="button   form__button">Отримати консультацію</button>
+                        </form>
+                        <div class="form__safety">Ваші данні повністю захищені</div>
+                    </div>
+
+                    <div class="time-list__item time-list__item--three">
+                        <div class="time-list__title">
+                            Фіксовану вартість обсмажування за договором
+                        </div>
+                        <img src="img/stamp.svg" alt="" class="time-list__img time-list__img--four">
+                    </div>
+
+                    <div class="time-list__item time-list__item--four">
+                        <div class="time-list__title">
+                            Відкриту та прозору націнку на виробнитство
+                        </div>
+                        <img src="img/table-3.svg" alt="" class="time-list__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

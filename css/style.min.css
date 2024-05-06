@@ -1503,7 +1503,8 @@ input {
 
 .footer {
   background-color: #F7F9FB;
-  padding: 64px;
+  padding: 3rem;
+  font-size: 0.875rem;
 }
 .footer__logo {
   width: 112px;
@@ -1513,7 +1514,11 @@ input {
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  flex-wrap: wrap;
+}
+@media screen and (max-width: 578px) {
+  .footer__row {
+    flex-direction: column;
+  }
 }
 .footer__link {
   text-decoration: underline;

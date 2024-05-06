@@ -24,7 +24,7 @@
                 <img src="" alt="" class="header-logo">
                 <div class="flex align-center header-callback">
                     <a href="tel:+380503700278" class="header-callback__phone">+38 (050) 370-02-78</a>
-                    <button class="button button-bordered header-callback__button ">Передзвоніть мені</button>
+                    <button class="button button-bordered header-callback__button button-callback">Передзвоніть мені</button>
                 </div>
             </div>
             <h1 class="header-title">
@@ -37,7 +37,7 @@
             <form action="" class="header-form">
                 <div class="form__row header-form__row">
                     <input class="form__input" type="tel" placeholder="Номер телефону">
-                    <button type="submit" class="button   header-form__button">Отримати пропозицію</button>
+                    <button type="submit" class="button  header-form__button">Отримати пропозицію</button>
                     <div class="header-form__label">з вигодою до 32%"</div>
                 </div>
             </form>
@@ -285,7 +285,7 @@
                         <div class="brand__text">
                             Отримуйте каву під брендом «EasyCoffee» з вигодою до 32% без додаткових націнок, за вартістю обсмаження 
                         </div>
-                        <button class="button brand__button ">Отримати пропозицію</button>
+                        <button class="button brand__button button-price">Отримати пропозицію</button>
                     </div>
                 </div>
             </div>
@@ -315,7 +315,7 @@
                                 <div class="quality__post">Операційний директор</div>
                             </div>
                         </div>
-                        <button class="quality-callback__button ">Замовити дегустаційний набір</button>
+                        <button class="button quality-callback__button button-deg">Замовити дегустаційний набір</button>
                     </div>
                 </div>
         </section>
@@ -403,11 +403,11 @@
                             Оберіть сорт кави:
                         </div>
                         <ul class="calc__list">
-                            <li class="calc__item calc__item--active">
+                            <li class="calc__item calc__item--active" data-price="120">
                                 Brasil Santos
                             </li>
-                            <li class="calc__item">
-                                Brasil Santos
+                            <li class="calc__item" data-price="140">
+                                Купаж 80\20
                             </li>
                         </ul>
                         <div class="calc__option">
@@ -424,6 +424,7 @@
                               </div>
                         </form>
                     </div>
+                    
                     <div class="calc__info">
                         <div class="calc__price">20 160 ₴</div>
                         <ul class="calc__triggers">
@@ -434,7 +435,7 @@
                                 Доставка безкоштовна
                             </li>
                         </ul>
-                        <button class="button  ">Отримати спеціальну ціну</button>
+                        <button class="button button-special">Отримати спеціальну ціну</button>
                         <div class="calc__more">
                             Розрахонок з урахуванням 20% усмажування – 1.2 кг сировини = 1кг обсмаженої кави
                         </div>
@@ -554,7 +555,86 @@
                 </div>
             </div>
         </section>
+        <footer class="footer">
+            <div class="container footer__row">
+                <img src="img/logo.svg" alt="" class="footer__logo">
+                <div class="footer__info">
+                    ТОВ «EasyCoffee» ЄДРПОУ: 45078281
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Політика конфіденційності</a>
+                </div>
+            </div>
+        </footer>
     </main>
+
+    <div class="modal modal-callback" data-modal>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button class=modal-close>&times;</button>
+                    <div class="modal-content__title">
+                        Залиште заявку та отримайте консультацію персонального менеджера
+                    </div>
+                    <form action="" class="form">
+                        <input type="text" class="form__input" placeholder="Ім’я (необов’язково)">
+                        <input type="text" class="form__input" placeholder="Номер телефону">
+                        <button class="button form__button modal-button">Отримати консультацію</button>
+                    </form>
+                    <div class="form__safety">Ваші данні повністю захищені</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-price" data-modal>
+        <div class=modal-dialog>
+            <div class=modal-content>
+                <button class="modal-close">&times;</button>
+                    <div class="modal-content__title">
+                        Отримати прорахунок вартості з вигодою до 32%
+                    </div>
+                    <form action="" class="form">
+                        <input type="text" class="form__input" placeholder="Ім’я (необов’язково)">
+                        <input type="text" class="form__input" placeholder="Номер телефону">
+                        <button class="button form__button modal-button">Отримати консультацію</button>
+                    </form>
+                    <div class="form__safety">Ваші данні повністю захищені</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-deg" data-modal>
+        <div class=modal-dialog>
+            <div class=modal-content>
+                <button class="modal-close">&times;</button>
+                    <div class="modal-content__title">
+                        Отримати дегустаційний набір та оптовий каталог 
+                    </div>
+                    <form action="" class="form">
+                        <input type="text" class="form__input" placeholder="Ім’я (необов’язково)">
+                        <input type="text" class="form__input" placeholder="Номер телефону">
+                        <button class="button form__button modal-button">Отримати консультацію</button>
+                    </form>
+                    <div class="form__safety">Ваші данні повністю захищені</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-special" data-modal>
+        <div class=modal-dialog>
+            <div class=modal-content>
+                <button class="modal-close">&times;</button>
+                    <div class="modal-content__title">
+                        Отримати кращу ціну на свіжообсмажене зерно з вигодою до 32%
+                    </div>
+                    <form action="" class="form">
+                        <input type="text" class="form__input" placeholder="Ім’я (необов’язково)">
+                        <input type="text" class="form__input" placeholder="Номер телефону">
+                        <button class="button form__button modal-button">Отримати консультацію</button>
+                    </form>
+                    <div class="form__safety">Ваші данні повністю захищені</div>
+            </div>
+        </div>
+    </div>
     
 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 <script src="js/app.min.js"></script>
